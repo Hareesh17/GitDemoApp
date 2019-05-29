@@ -18,8 +18,9 @@ class ViewController: UIViewController {
         
         print(reverse(text: "stressed"))
         let reversed: String = reverse(text: "stressed")
+        let reversed2: String = reverse(text: "Malayalam")
         print(message)
-        reverseLable.text = reversed
+        reverseLable.text = reversed2
     }
 
     func reverse(text: String) -> String {
