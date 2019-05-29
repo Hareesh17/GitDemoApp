@@ -10,14 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var reverseLable: UILabel!
     let message = "Hello Git Hub!"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print(reverse(text: "stressed"))
+        let reversed: String = reverse(text: "stressed")
         print(message)
-        
+        reverseLable.text = reversed
     }
 
     func reverse(text: String) -> String {
